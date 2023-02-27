@@ -1,0 +1,23 @@
+Title: Python SOLID
+
+Training level: Independent
+
+Requirement for the participant:
+Dear Manager, before approving please ensure that participant meets below requirements.
+- OFFICE PRESENCE
+- Good understanding of Python Object Oriented paradigms
+- Installed Python 3.10+
+- Installed Python IDE eg. VS Code, PyCharm
+- (optional) IDE that allows reading *.ipynb files (Jupyter Notbooks)
+
+
+Training description:
+SOLID Principles
+   * The Single-Responsibility Principle (SRP)
+   * The Open-Closed Principle (OCP)
+   * The Liskov Substitution Principle (LSP)
+   * The Interface Segregation Principle (ISP)
+   * The Dependency inversion Principle (DIP)
+
+* Exact breaks to be agreed with participants
+** After every major topic there will be exercises
