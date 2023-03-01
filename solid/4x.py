@@ -4,19 +4,23 @@ Remove unnecessary interface elements from parent class.
 
 
 class CPU:
-    ...
+    def compute(self) -> None:
+        print("computing")
 
 
 class GFX:
-    ...
+    def render_video(self) -> None:
+        print("Rendering video...")
 
 
 class Mobo:
-    ...
+    def enable_cooler(self) -> None:
+        print * ("Enabling cooler...")
 
 
 class PSU:
-    ...
+    def supply_power(self) -> None:
+        print("Supplying power...")
 
 
 class Ports:
