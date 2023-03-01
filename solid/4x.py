@@ -2,39 +2,44 @@
 Remove unnecessary interface elements from parent class.
 """
 
+from abc import ABC, abstractmethod
+
 
 class CPU:
-    def compute(self) -> None:
-        print("computing")
+    def compute(self) -> str:
+        return "Computing..."
 
 
 class GFX:
-    def render_video(self) -> None:
-        print("Rendering video...")
+    def render_video(self) -> str:
+        return "Rendering video..."
 
 
 class Mobo:
-    def enable_cooler(self) -> None:
-        print * ("Enabling cooler...")
+    def enable_cooler(self) -> str:
+        return "Enabling cooler..."
 
 
 class PSU:
-    def supply_power(self) -> None:
-        print("Supplying power...")
+    def supply_power(self) -> str:
+        return "Supplying power..."
 
 
-class Ports:
+class Ports(ABC):
+    @abstractmethod
     def usb2(self) -> str:
         ...
 
+    @abstractmethod
     def usb3(self) -> str:
         ...
 
+    @abstractmethod
     def thunderbolt(self) -> str:
         ...
 
 
-class PC(Ports, GFX, CPU, Mobo, PSU):
+class Pc(Ports, GFX, CPU, Mobo, PSU):
     def usb3(self) -> str:
         return "USB-C"
 
