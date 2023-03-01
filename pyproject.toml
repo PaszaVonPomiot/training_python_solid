@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "python_solid"
+name = "training_python_solid"
 version = "0.1.0"
 description = ""
 authors = ["None"]
